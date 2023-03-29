@@ -55,3 +55,39 @@
   height: 100%;
   object-fit: cover;
 }
+
+@media only screen and (max-width: 1100px) {
+  .card_text {
+    width: 70%;
+  }
+  .card_image {
+    width: 30%;
+  }
+  .card_image img {
+    object-position: left;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .card {
+    height: 80vh;
+    flex-direction: column-reverse;
+  }
+  .card_image {
+    width: 100%;
+  }
+  .card_text {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .card_image {
+    height: 30%;
+  }
+  .card_text {
+    height: 70%;
+    padding: 25px;
+  }
+  .title h1 {
+    font-size: 1.5rem;
+  }
+}
