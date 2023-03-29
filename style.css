@@ -48,6 +48,7 @@
 .card_image {
   height: 100%;
   width: 50%;
+  position: relative;
 }
 
 .card_image img {
@@ -55,7 +56,13 @@
   height: 100%;
   object-fit: cover;
 }
-
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: var(--heading);
+  opacity: 0.3;
+  position: absolute;
+}
 @media only screen and (max-width: 1100px) {
   .card_text {
     width: 70%;
@@ -79,6 +86,7 @@
     width: 100%;
   }
 }
+
 @media only screen and (max-width: 500px) {
   .card_image {
     height: 30%;
